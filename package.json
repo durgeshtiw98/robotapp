@@ -1,0 +1,14 @@
+{
+  "name": "robotpilot",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Dependency-free robot mission control",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "node --test tests/core.test.js",
+    "check": "node --check app.js && node --check core.js && node --check sw.js",
+    "test:browser": "node tests/browser.test.js",
+    "screenshots": "node tests/browser.test.js --screenshots"
+  }
+}
